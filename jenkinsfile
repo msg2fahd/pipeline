@@ -5,7 +5,7 @@ pipeline {
                       	steps {
 								echo 'Running build phase..'
 								git 'https://github.com/msg2fahd/pipeline.git'
-                                sh './build.sh'
+                                bat 'build.sh'
                            	}
                     	}
          	
