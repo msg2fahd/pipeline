@@ -4,7 +4,8 @@ pipeline {
 			stage('Build') {
                       	steps {
 								echo 'Running build phase..'
-								sh "whoami"
+								git 'https://github.com/msg2fahd/pipeline.git'
+                                sh './build.sh'
                            	}
                     	}
          	
