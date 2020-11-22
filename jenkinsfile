@@ -4,15 +4,13 @@ pipeline {
 			stage('Build') {
                       	steps {
 								echo 'Running build phase..'
-								git 'https://github.com/msg2fahd/pipeline.git'
-                                bat 'attempt1.bat'                           	}
+								bat 'attempt1.bat'                           	}
                     	}
          	
          	stage('Test'){
          				steps{
          						echo 'Testing progress...'
-                                pwd()
-                                powershell 'build.sh'
+                                bat 'build.sh'
          					}
         			 	}
          	
