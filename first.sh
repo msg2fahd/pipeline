@@ -1,0 +1,2 @@
+mkdir demo
+ls -l
