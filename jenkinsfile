@@ -10,7 +10,7 @@ pipeline {
          	stage('Test'){
          				steps{
          						echo 'Testing progress...'
-                                bat 'build.sh'
+                                sh 'build.sh'
          					}
         			 	}
          	
