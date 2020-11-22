@@ -1,21 +1,24 @@
 pipeline {
 	agent any
-	stages {
-		stage('Build') {
-                      steps {
-				echo 'Running build phase..'
-                            }
-                 }
-         stage('Test'){
-         			steps{
-         		echo 'Testing progress...'
-         	}
-         }
-         stage('Deploy'){
-         			steps{
-         		echo 'Deploying is in  progress...'
-         	}
-         }
-         
-    }        
-}
+		stages {
+			stage('Build') {
+                      	steps {
+								echo 'Running build phase..'
+								sh 'pwd'
+                           	}
+                    	}
+         	
+         	stage('Test'){
+         				steps{
+         						echo 'Testing progress...'
+         					}
+        			 	}
+         	
+         	stage('Deploy'){
+         				steps{
+         						echo 'Deploying is in  progress...'
+         					}
+         				}
+
+         }        
+ }
