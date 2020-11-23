@@ -19,8 +19,7 @@ pipeline {
          						echo 'Deploying is in  progress...'
                                 // powershell '.\\build.sh'
                                 echo pwd()
-                                sh 'C:\\Tools\\JENKINS_HOME\\workspace\\FirstPipeline\\build.sh'
-
+                                echo build.sh
          					}
          				}
 
