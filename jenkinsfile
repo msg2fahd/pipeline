@@ -17,8 +17,11 @@ pipeline {
          	stage('Deploy'){
          				steps{
          						echo 'Deploying is in  progress...'
-                                powershell '.\\build.sh'
-                                // sh 'build.sh'
+                                // powershell '.\\build.sh'
+                                echo pwd()
+                                pwd()
+                                sh build.sh
+
          					}
          				}
 
