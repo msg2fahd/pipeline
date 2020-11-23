@@ -18,6 +18,7 @@ pipeline {
          				steps{
          						echo 'Deploying is in  progress...'
                                 powershell '.\\build.sh'
+                                echo "powershell '.\\build.sh'"
          					}
          				}
 
