@@ -20,7 +20,7 @@ pipeline {
                                 // powershell '.\\build.sh'
                                 echo pwd()
                                 pwd()
-                                sh build.sh
+                                sh 'build.sh'
 
          					}
          				}
