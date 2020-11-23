@@ -3,13 +3,13 @@ pipeline {
 		stages {
 			stage('Build') {
                       	steps {
-								echo 'Running build phase..'
+								echo 'Running build phase a batch file.'
 								bat 'attempt1.bat'                           	}
                     	}
          	
          	stage('Test'){
          				steps{
-         						echo 'Testing progress...'
+         						echo 'Testing progress a python file.'
                                 bat 'python test.py'
          					}
         			 	}
