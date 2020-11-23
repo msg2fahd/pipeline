@@ -17,7 +17,7 @@ pipeline {
          	stage('Deploy'){
          				steps{
          						echo 'Deploying is in  progress...'
-                                sh 'C:\\Tools\\pipeline\\one\\build.sh'
+                                powershell '.\\build.sh'
          					}
          				}
 
