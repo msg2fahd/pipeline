@@ -1,13 +1,9 @@
 pipeline {
 	agent any
-<<<<<<< HEAD
         environment
             {
                PATH = "C:\\Program Files\\Git\\bin\\:$PATH"    
            }
-=======
-	
->>>>>>> 6a76ac38fdece1a1104aa82445816bc14d6f25b4
 		stages {
 			stage('Build') {
                       	steps {
@@ -27,11 +23,7 @@ pipeline {
          						echo 'Deploying is in  progress...'
                                 // powershell '.\\build.sh'
                                 echo pwd()
-<<<<<<< HEAD
                                 sh 'build.sh'
-=======
-                                sh './build.sh'
->>>>>>> 6a76ac38fdece1a1104aa82445816bc14d6f25b4
          					}
          				}
 
