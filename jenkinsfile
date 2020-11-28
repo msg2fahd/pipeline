@@ -19,7 +19,7 @@ pipeline {
          						echo 'Deploying is in  progress...'
                                 // powershell '.\\build.sh'
                                 echo pwd()
-                                bat 'sh build.sh'
+                                bat 'bash build.sh'
          					}
          				}
 
